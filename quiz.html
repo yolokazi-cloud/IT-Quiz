@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS STYLING -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Interactive Coding Quiz</title>
+</head>
+<body>
+    <main>
+        <div class="quiz-card" >
+            <h1 class="card-title">Interactive Coding Quiz</h1>
+            <div class="quiz-content" id="question-container">
+                <h2 class="quiz-question" >Choose the correct answer</h2>
+                <p id="question" style="margin-bottom: 5%;"></p>
+                <div class="option-btn" id="choices-container">
+                    <button class="answer-btn" id="choice-1"></button>
+                    <button class="answer-btn" id="choice-2"></button>
+                    <button class="answer-btn" id="choice-3"></button>
+                    <button class="answer-btn" id="choice-4"></button>
+                </div>
+                <button class="next-btn" id="next-button">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <div id="custom-alert" class="custom-dropdown-alert">
+        <span id="custom-alert-text"></span>
+        <button id="custom-alert-restart" id="restart" >Restart</button>
+        <button id="custom-alert-close" id="close">Close</button>
+    </div>
+      
+
+    <footer class="footer">
+        <div class="quiz-footer">
+            <p>Coded And Developed By <a href="https://github.com/yolokazi-cloud/">Yolokazi Nogantsho</a> and <a href="https://github.com/newnormal-arch">Bongani Ntshingila</a></p>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -46,8 +46,11 @@ main {
 }
 
 .quiz-question {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
+}
+.quiz-card ul li{
+    margin: 10px;
 }
 
 /* ANSWER BUTTONS */
@@ -94,3 +97,36 @@ footer {
     position: absolute;
     bottom: 10px;
 }
+.custom-dropdown-alert {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 48.5%;
+    transform: translateX(-50%);
+    background-color:  var(--background-color);;
+    color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    border-radius: 5px;
+  }
+  
+  #custom-alert-close {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  #custom-alert-restart {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
