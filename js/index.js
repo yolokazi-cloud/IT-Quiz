@@ -1,5 +1,5 @@
-
-    function Question(text, choices, correctChoiceIndex) {
+ //Define a Question constructor function that may be converted into a class
+ function Question(text, choices, correctChoiceIndex) {
         this.text = text;
         this.choices = choices;
         this.correctChoiceIndex = correctChoiceIndex;
@@ -23,7 +23,7 @@
             this.score += 1;
           }
         }
-      
+      //Traversing to the next questions
         nextQuestion() {
           if (this.currentIndex < this.questions.length - 1) {
             this.currentIndex++;
@@ -42,7 +42,6 @@
             choiceButton.addEventListener('click', () => this.checkAnswer(i));
           }
         }
-      
       
       displayResults() {
         const totalQuestions = this.questions.length;
@@ -67,7 +66,6 @@
         });
       }
       
- 
         resetQuiz() {
           this.currentIndex = 0;
           this.score = 0;
