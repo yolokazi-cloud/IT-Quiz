@@ -9,12 +9,18 @@
 </head>
 <body>
     <main>
+
         <div class="quiz-card" >
             <h1 class="card-title">Interactive Coding Quiz</h1>
             <div class="quiz-content" id="question-container">
-              <p>Thank you for participating in this quiz!</p>
+               
+                <div class="quiz-content" id="question-container">
+                    <p >Thank you for participating in this quiz!</p>
+                  </div>
+                <button class="next-btn" id="close-quiz">Okay</button>
             </div>
         </div>
+       
     </main>
 
     <footer class="footer">
@@ -22,7 +28,10 @@
             <p>Coded And Developed By <a href="https://github.com/yolokazi-cloud/">Yolokazi Nogantsho</a> and <a href="https://github.com/newnormal-arch">Bongani Ntshingila</a></p>
         </div>
     </footer>
-
-    <script src="./js/index.js"></script>
+<script>
+    document.getElementById('close-quiz').addEventListener('click',()=>{
+        window.location.href = 'index.html';
+    })
+</script>
 </body>
 </html>

@@ -52,6 +52,9 @@ main {
 .quiz-card ul li{
     margin: 10px;
 }
+.questionend{
+margin-bottom: 10%;
+}
 
 /* ANSWER BUTTONS */
 .option-btn {
