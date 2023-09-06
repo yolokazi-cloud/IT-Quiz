@@ -12,16 +12,18 @@
           this.currentIndex = 0;
           this.score = 0;
         }
-      
+      //Create a function to get current question
         getCurrentQuestion() {
           return this.questions[this.currentIndex];
         }
       
         checkAnswer(choiceIndex) {
           const currentQuestion = this.getCurrentQuestion();
-          if (currentQuestion.correctChoiceIndex === choiceIndex) {
+        
+          if (currentQuestion.correctChoiceIndex === choiceIndex && this.score <= this.questions.length - 1 ) {
             this.score += 1;
-          }
+          } 
+       
         }
       //Traversing to the next questions
         nextQuestion() {
@@ -45,7 +47,7 @@
       
       displayResults() {
         const totalQuestions = this.questions.length;
-        const resultMessage = `Quiz completed!\nYou scored ${this.score} out of ${totalQuestions}`;
+        const resultMessage = `Quiz completed! You scored ${this.score} out of ${totalQuestions}`;
         
         const customAlert = document.getElementById('custom-alert');
         const customAlertText = document.getElementById('custom-alert-text');
@@ -70,6 +72,7 @@
           this.currentIndex = 0;
           this.score = 0;
           this.displayQuestion();
+         
         }
      
       }
