@@ -32,6 +32,21 @@ main {
 }
 
 /* QUIZ CARD */
+main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.quiz-counter {
+    width: 90%;
+    max-width: 450px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--background-color);
+    margin-bottom: 10px;
+}
+
 .quiz-card {
     width: 90%;
     max-width: 450px;
